@@ -1,0 +1,24 @@
+{
+    "Movie": [
+        {
+         
+            "id": "1",
+            "img": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+            "Title": "The Shawshank Redemption",
+            "Year": 1994,
+            "Genre": "Drama",
+            "Rating": 9.2,
+            "Description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+        },
+        {
+         
+            "id": "2",
+            "img": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+            "Title": "The Godfather",
+            "Year": 1972,
+            "Genre": "Crime, Drama",
+            "Rating": 9.3,
+            "Description": "The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son."
+        }
+    ]
+}

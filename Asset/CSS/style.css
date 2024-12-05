@@ -7,13 +7,13 @@
 }
 #main_container{
     width: 100%;
-    height: 5000px;
+    height: auto;
     background-color: aqua;
 }
 .container{
     width: 100%;
     height: 350px;
-    /* border: 1px solid black; */
+    border-bottom: 3px solid rgba(0, 0, 0, 0.226);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,13 +43,13 @@
     padding: 15px;
    background-color: rgba(0, 0, 0, 0.669);
 }
-h2{
+h3{
     text-transform:uppercase;
 }
 .film_details{
-    width: 200px;
+    width: 100%;
     height: 40px;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,22 +61,30 @@ h2{
     align-items: center;
     width: 80px;
     height: 30px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 .movie_type{
     font-size: 1.2rem;
     display: flex;
     
     align-items: center;
-    width: 80px;
+    width: 150px;
     height: 30px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
+}
+.rating{
+    width: 40px;
+    height: 30px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .movie_description{
 
     width: 100%;
     height: 160px;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     font-size: 14px;
     padding-top: 10px;
     line-height: 17px;
@@ -86,7 +94,7 @@ h2{
 .movie_trailer{
     width: 150px;
     height: 45px;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     display: flex;
     align-items: center;
 }
@@ -99,6 +107,7 @@ h2{
     justify-content: space-evenly;
     align-items: center;
     border-radius: 20px;
+    cursor: pointer;
 
 }
 .icon{

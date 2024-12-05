@@ -1,34 +1,34 @@
-  <div class="container">
-            <div class="movie_main_container">
-                <div class="movie_poster_img">
-                    <img src="./Asset/image/062cd2fd_889d_435c_88f1_082a620bcab3_.jpg" alt="" class="movie_img" />
+ <div class="container">
+        <div class="movie_main_container">
+            <div class="movie_poster_img">
+                <img src="./Asset/image/062cd2fd_889d_435c_88f1_082a620bcab3_.jpg" alt="" class="movie_img" />
+            </div>
+
+            <div class="movie_ditails">
+                <h2>pushpa 2</h2>
+                <div class="film_details">
+                    <div class="movie_year">1994</div>
+                  
+                    <div class="movie_type">Action</div>
+                    <div class="rating">
+                      9.3
+                    </div>
+                </div>
+                <div class="movie_description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Excepturi, adipisci veniam eius quas cumque cum illo maxime optio
+                    hic voluptate, aliquid nulla commodi et mollitia saepe. Laudantium
+                   
                 </div>
 
-                <div class="movie_ditails">
-                    <h2>pushpa 2</h2>
-                    <div class="film_details">
-                        <div class="movie_year">1994</div>
-                        <!-- <div class="description"></div> -->
-                        <div class="movie_type">Action</div>
-                    </div>
-                    <div class="movie_description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Excepturi, adipisci veniam eius quas cumque cum illo maxime optio
-                        hic voluptate, aliquid nulla commodi et mollitia saepe. Laudantium
-                        suscipit architecto ab. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Excepturi, adipisci veniam eius quas cumque cum
-                        illo maxime optio hic voluptate, aliquid nulla commodi et mollitia
-                        saepe. Laudantium suscipit architecto ab
-                    </div>
-
-                    <div class="movie_trailer">
-                        <div class="icon_and_button_main">
-                            <div class="icon">
-                                <img src="./Asset/image/play-solid.svg" alt="" class="play_button" />
-                            </div>
-                            <div class="button">Watch Trailer</div>
+                <div class="movie_trailer">
+                    <div class="icon_and_button_main">
+                        <div class="icon">
+                            <img src="./Asset/image/play-solid.svg" alt="" class="play_button" />
                         </div>
+                        <div class="button">Watch Trailer</div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
