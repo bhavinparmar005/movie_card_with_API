@@ -1,34 +1,54 @@
 async function get() {
   try {
-    const response = await fetch("http://localhost:3000/Movie");
+    const options = {
+      method: 'GET',
+      headers: {
+        accept: 'application/json',
+        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4OWY5ZDViYzc1YmRmMjkzNDg2OGQyMTIwZjQ4MjhjYiIsIm5iZiI6MTczMzQ3MzcyNy43NzQwMDAyLCJzdWIiOiI2NzUyYjViZjgwZTViOGYwYTc1NjJmOWMiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.ysK4CwkvvEjYrkHQNmdq-d8LiEVPn-ZbVFRTtz9vQ6U'
+      }
+    };
+
+    let response = await fetch('https://api.themoviedb.org/3/trending/all/day?language=en-US', options)
     const data = await response.json();
 
-    // console.log(data[0].Title);
-    // console.log(data.movies[1].Year);
-    // console.log(data.movies[1].Poster);
-    // console.log(data.movies[1].imdbID);
-    data.forEach((val) => {
-      let main = document.getElementById("main_container");
-      
-        let div = document.createElement('div');
+    let final =data.results;
 
+
+    final.forEach((val) => {
+      console.log(val);
+      
+      let main = document.getElementById("main_container");
+
+      let div = document.createElement('div');
+
+      function getName(){
+        let name = val.title || val.name || val.original_name || val.original_title || val.name ;
+        return name
+      }
+ let title =getName();
+
+ function getDate(){
+  let date = val.release_date || val.first_air_date || val.release_date || val.first_air
+  return date
+ }
+ let date =getDate();
       div.innerHTML = `
   <div class="container">
             <div class="movie_main_container">
                 <div class="movie_poster_img">
-                    <img src="${val.img}" alt="" class="movie_img" />
+                    <img src="https://image.tmdb.org/t/p/w500${val.poster_path}" alt="" class="movie_img" />
                 </div>
 
                 <div class="movie_ditails">
-                    <h3>${val.Title}</h3>
+                    <h3>${title}</h3>
                     <div class="film_details">
-                        <div class="movie_year">${val.Year}</div>
+                        <div class="movie_year">${val.media_type}</div>
                      
-                        <div class="movie_type">${val.Genre}</div>
-                         <div class="rating">${val.Rating}</div>
+                        <div class="movie_type">${date}</div>
+                         <div class="rating">${val.vote_average}</div>
                     </div>
                     <div class="movie_description">
-                        ${val.Description}
+                     ${val.overview}
                     </div>
 
                     <div class="movie_trailer">
@@ -48,9 +68,9 @@ async function get() {
 
         `;
 
-       main.appendChild(div);
+      main.appendChild(div);
 
-      
+
 
     });
   } catch (error) {
@@ -59,3 +79,8 @@ async function get() {
 }
 
 get();
+
+
+
+
+
